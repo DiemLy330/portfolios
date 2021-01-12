@@ -39,9 +39,9 @@ def load_english():
 
 def get_features(words):
     start = np.empty([0, 29])
-    character = np.zeros(29)
     alphabet_list = list(alphabet)
     for word in words:
+        character = np.zeros(29)
         for order, letter in enumerate(alphabet_list):
             if letter in word:
                 character[order] += 1
@@ -94,10 +94,10 @@ def word_classification():
 
 
 def main():
-    # x,y = get_features_and_labels()
-    # print(len(x.shape))
-    # print(x.shape, y.shape[0])
-    # print(sum(y))
+    x,y = get_features_and_labels()
+    print(len(x.shape))
+    print(x.shape, y.shape[0])
+    print(sum(y))
     print("Accuracy scores are:", word_classification())
 
 if __name__ == "__main__":
