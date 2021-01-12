@@ -17,4 +17,4 @@ This project is a part of Python for Data analysis course organized by Universit
 
 # repatronage review
 This is a project from Aalto University. The objective is to analyze repatronage possibility based on their reviews for hotel
-This project took 20 hours to restructure data tables, and analyze the reviews. 
+This project took 20 hours to restructure data tables, and analyze the reviews. The uploaded files were part of the project. 
