@@ -51,7 +51,6 @@ def age_group(x):
     total = sum(result)
     return total
 
-
 def main():
     x = data_cleaning()
     x = x[x.brand.isna()==False]
@@ -81,7 +80,6 @@ def main():
     plt.show()
 
     # x.to_csv(r'/Users/diemly/Documents/Python Projects/src/customer_value.csv',index=False)
-
 
 if __name__ == "__main__":
     main()
