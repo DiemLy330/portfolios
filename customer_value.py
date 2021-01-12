@@ -60,7 +60,7 @@ def main():
     y = pd.read_csv('src/customer_info.csv', sep=',')
     x = x.merge(y, left_on='customer_id', right_on='customer_id')
 
-    # Plot graph of customer by age and gender
+    # Plot graph of female customer by age
     cols = ['< 20', '20 - 29', '30 - 39', '40 - 49', '50 - 59', '60 - 69', '70 - 79']
     female = x.where(x.gender == 'Female')
     female = age_group(female)
@@ -70,7 +70,7 @@ def main():
     plt.title('Female')
     plt.show()
 
-
+    # Plot graph of female customer by age
     male = x.where(x.gender == 'Male')
     male = age_group(male)
     plt.barh(cols, male, color='blue')
@@ -80,8 +80,6 @@ def main():
     plt.title('Male')
     plt.show()
 
-    # print(profit_by_segement)
-    # print(profit_by_segement[2]/profit_by_segement.sum())
     # x.to_csv(r'/Users/diemly/Documents/Python Projects/src/customer_value.csv',index=False)
 
 
